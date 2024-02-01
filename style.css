@@ -1,0 +1,98 @@
+h1 {
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    /* center the text in the screen */
+    text-align: center;
+    /* font color white */
+    color: white;
+}
+/* background color black */
+body {
+    background-color: black;
+    /* remove margin and padding */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.rectangle-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.rectangle {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.rectangle-wrapper::before,
+.rectangle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+}
+
+.rectangle-wrapper::before {
+    border-color: red;
+    transform: translate(-2px, -2px);
+}
+
+.rectangle::before {
+    border-color: green;
+    transform: translate(2px, 2px);
+}
+
+.rectangle-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    transform: translate(-2px, 0);
+}
+
+.squares-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.squares {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.squares-wrapper::before,
+.squares::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+}
+
+.squares-wrapper::before {
+    border-color: red;
+    transform: translate(-2px, -2px);
+}
+
+.squares::before {
+    border-color: green;
+    transform: translate(2px, 2px);
+}
+
+.squares-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    transform: translate(-2px, 0);
+}
