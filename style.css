@@ -1,5 +1,11 @@
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 h1 {
-    font-family: Impact, sans-serif;
+    font-family: Protest Guerrilla, sans-serif;
     font-weight: bold;
     /* center the text in the screen */
     text-align: center;
@@ -15,84 +21,38 @@ body {
     color: white;
 }
 
-.rectangle-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
 .rectangle {
     position: relative;
     width: 100px;
     height: 50px;
-    border: 1px solid white;
+    border: 4px solid white;
     background-color: transparent;
+    margin: 0 auto;    
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 2%;
+    box-shadow: inset -2px -2px 0 0 blue, -2px -2px 0 0 red, 2px 2px 0 0 rgb(0, 255, 0);
+    width: 50%;
 }
 
-.rectangle-wrapper::before,
-.rectangle::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px solid;
-}
-
-.rectangle-wrapper::before {
-    border-color: red;
-    transform: translate(-2px, -2px);
-}
-
-.rectangle::before {
-    border-color: green;
-    transform: translate(2px, 2px);
-}
-
-.rectangle-wrapper::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px solid blue;
-    transform: translate(-2px, 0);
-}
-
-.squares-wrapper {
+.square {
     position: relative;
-    display: inline-block;
-}
-
-.squares {
-    position: relative;
-    width: 50px;
+    width: 100px;
     height: 50px;
-    border: 1px solid white;
+    border: 4px solid white;
     background-color: transparent;
+    margin: 0 auto;    
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 2%;
+    box-shadow: inset -2px -2px 0 0 blue, -2px -2px 0 0 red, 2px 2px 0 0 rgb(0, 255, 0);
+    width: 10%;
+    padding-bottom: 1%;
 }
 
-.squares-wrapper::before,
-.squares::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px solid;
+/* remove the color blue and underline from links */
+a {
+    color: white;
+    text-decoration: none;
 }
 
-.squares-wrapper::before {
-    border-color: red;
-    transform: translate(-2px, -2px);
-}
-
-.squares::before {
-    border-color: green;
-    transform: translate(2px, 2px);
-}
-
-.squares-wrapper::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px solid blue;
-    transform: translate(-2px, 0);
-}
