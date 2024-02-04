@@ -27,7 +27,6 @@ body {
 
 .rectangle {
     position: relative;
-    width: 100px;
     height: auto;
     border: 4px solid white;
     background-color: transparent;
@@ -90,4 +89,14 @@ a {
 
 .git svg{
     padding: 3px;
+}
+
+@media screen and (min-width: 500px) {
+    .rectangle {
+        width: 30%;
+    }
+    .squares {
+        width: 30%;
+    }
+    
 }
